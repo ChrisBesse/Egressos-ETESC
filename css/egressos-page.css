@@ -36,6 +36,17 @@
   padding: 0.75rem;
   border-radius: 50%;
   margin: 1.5rem auto 0;
+
+  animation: arrow-up-down 500ms ease infinite alternate;
+}
+
+@keyframes arrow-up-down {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(30px);
+  }
 }
 
 /* ===========
@@ -60,16 +71,21 @@
 .cursos-container img {
   /* max-width: 100%; */
   padding: 0.5rem 0;
-}
-
-.cursos-container-border {
-  border: 3px solid var(--color-primary);
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 .cursos-tabs {
   flex: 1;
   cursor: pointer;
   position: relative;
+
+  transition: all 300ms ease;
+}
+
+.cursos-tabs:hover {
+  outline: 3px solid var(--color-secondary-opacity);
+  outline-offset: -3px;
 }
 
 .btn-cursos {
@@ -84,14 +100,18 @@
   content: "";
   display: block;
   position: absolute;
-  width: 0;
-  height: 2px;
-  background: var(--color-dark);
+  width: calc(100% - 25px);
+  height: 3px;
+  background: var(--color-secondary);
+  transform: scaleX(0);
+
+  transition: all 300ms ease;
 }
 
 .cursos-tabs:hover:hover .btn-cursos::after,
 .cursos-tabs:hover:focus .btn-cursos::after {
-  width: calc(100% - 25px);
+  /* width: calc(100% - 25px); */
+  transform: scaleX(1);
 }
 .cursos-tabs:hover .btn-cursos,
 .cursos-tabs:focus .btn-cursos {
@@ -100,11 +120,12 @@
 }
 
 /* Show  for javascript*/
+.cursos-container-border {
+  outline: 3px solid var(--color-secondary) !important;
+  outline-offset: -3px;
+}
 .hide-sc {
   display: none;
-}
-.curso-border {
-  border-bottom: 5px solid var(--color-primary);
 }
 .show {
   display: block !important;
@@ -126,7 +147,8 @@
 .cursos-content h3 {
   text-align: center;
   color: var(--color-dark);
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
+  font-size: 2rem;
 }
 
 /* ===========
@@ -153,7 +175,7 @@
     border-bottom: 50px solid var(--color-bg-light);
 
     position: absolute;
-    top: 183px;
+    top: 187px;
   }
 
   .hide-lc {

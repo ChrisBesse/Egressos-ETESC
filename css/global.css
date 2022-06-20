@@ -5,6 +5,7 @@
 :root {
   --color-primary: #00ffff;
   --color-secondary: #000dfb;
+  --color-secondary-opacity: #000dfb5b;
   --color-light: #fff;
   --color-dark: #121255;
   --color-dark2: #3352eb;
@@ -13,7 +14,7 @@
   --card-bg: #1b35ff;
   --header-bg: #00c3fffc;
   --header-clr: #fff;
-  --color-bg-light: #86f1ffcf;
+  --color-bg-light: #a0dbff;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -65,21 +66,22 @@ p {
   background: #a4f4ff;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #aee4ff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(26, 133, 255);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-} */
+  background: rgb(0, 119, 255);
+}
 
 /* ===========
  header styles
@@ -189,9 +191,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
   }
   .exalunos-card .img-div {
     min-width: 300px;
+    margin-right: 1rem;
   }
 }
 
@@ -225,18 +229,20 @@ p {
   cursor: pointer;
   border: none;
   background: var(--color-primary);
+  color: var(--color-secondary);
   padding: 0.5em 0.75em;
-  color: var(--color-light);
   text-decoration: none;
   text-transform: uppercase;
 
   font-weight: var(--fw-700);
+
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
 }
 .btn:hover {
   background: transparent;
   color: var(--color-primary);
-  outline: 2px solid var(--color-primary);
-  outline-offset: -2px;
+  outline: 3px solid var(--color-primary);
+  outline-offset: -3px;
 }
 
 .btn + .btn {

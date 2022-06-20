@@ -7,6 +7,7 @@ function selectItem(e) {
     removeBorder()
     removeArrow()
     
+    console.log(this.id)
     
     // Adicionando borda para telas pequenas
     this.classList.add('cursos-container-border')
