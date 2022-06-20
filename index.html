@@ -1,115 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Egressos da ETESC</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
     <script src="script/index.js" defer></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
-</head>
-<body>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header-class">
-
-        <img src="img/pngFAETEC.png" alt="">
-
+      <img src="img/pngFAETEC.png" alt="" />
     </header>
 
     <main>
+      <div class="home-section-bg"></div>
+      <section class="home-section">
+        <div class="home-text">
+          <h1>Alunos Egressos</h1>
+          <p>
+            Conheça os alunos que passaram pela Escola Técnica Estadual de Santa
+            Cruz e hoje são alunos que estão muito bem no mercado de trabalho:
+          </p>
+        </div>
+      </section>
 
-        <div class="home-section-bg"></div>
-        <section class="home-section">
-            <div class="home-text">
-                <h1>Alunos Egressos</h1>
-                <p>Conheça os alunos que passaram pela Escola Técnica Estadual de Santa Cruz e hoje são alunos que estão muito bem no mercado de trabalho:</p>
+      <section class="cursos-section">
+        <h2>Cursos da ETESC</h2>
+        <div class="container">
+          <div class="card">
+            <div class="cursos-card-img">
+              <img
+                src="img/home-page-cursos/info.png"
+                alt="Logo de informática"
+              />
             </div>
-        </section>
-
-        <section class="cursos-section">
-            <h2>Cursos da ETESC</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="img/home-page-cursos/info.png" alt="Logo de informática">
-                    <h3>Informática</h3>
-                    <p>Tem como objetivo desenvolver a capacidade e as habilidades do estudante no que diz respeito ao desenvolvimento, ao aperfeiçoamento e à correção de tecnologias. Por meio de aulas práticas e teóricas, o aluno aprende a arquitetar estruturas de softwares e sistemas, além de estudar as mais variadas e modernas linguagens da programação, seguindo sempre as normas técnicas vigentes. </p>
-                </div>
-                <div class="card">
-                    <img src="img/home-page-cursos/admin.png" alt="Logo de administração">
-                    <h3>Administração</h3>
-                    <p> É responsável por formar profissionais responsáveis em executar as atividades administrativas da organização, principalmente relacionados ao processo de gestão de pessoas, marketing, vendas, operação de logística e outras.</p>
-                </div>
-                <div class="card">
-                    <img src="img/home-page-cursos/quimica.png" alt="Logo de química">
-                    <h3>Química</h3>
-                    <p>Tem como objetivo formar pessoas para atuar com os processos químicos em indústrias, fazer a manipulação de substâncias e de equipamentos e trabalhar em laboratórios — com controle de qualidade, assistência técnica e outros.</p>
-                </div>
-                <div class="card">
-                    <img src="img/home-page-cursos/enfermagem.png" alt="Logo de enfermagem">
-                    <h3>Enfermagem</h3>
-                    <p> É uma formação de nível médio que inclui disciplinas teóricas e práticas, excelente opção para quem tem interesse pela área da saúde e quer entrar mais rápido no mercado de trabalho. As aulas práticas são realizadas em laboratórios, onde o estudante pode treinar os procedimentos que terá que executar no estágio e depois de formado, com a supervisão de profissionais experientes. </p>
-                </div>
-                <div class="card">
-                    <img src="img/home-page-cursos/eletro.png" alt="Logo de eletromecânica">
-                    <h3>Eletromecânica</h3>
-                    <p>Integra as áreas de instrumentação e controle de processos industriais com a eletrônica e mecânica industrial no setor produtivo, manutenção de equipamentos e instalações eletroeletrônicas industriais, observando normas técnicas e de segurança.</p>
-                </div>
-                <div class="card">
-                    <img src="img/home-page-cursos/segurança.png" alt="Logo de segurança de trabalho">
-                    <h3>Segurança do Trabalho</h3>
-                    <p>Ensina análise de ambientes laborais, prevenção de riscos e atuação em casos de perigo como incêndios, quedas, mau funcionamento de equipamentos e escape de gases tóxicos, entre outras situações.</p>
-                </div>
-            </div>    
-        </section>
-        
-        <section class="ex-alunos-section">
-            <h2>Alunos Promissores</h2>
-
-            <div class="exalunos-grid">
-                
-                <div class="exalunos-card">
-                    <div>
-                        <div class="img-div"></div>
-                    </div>
-                    <div class="exalunos-descricao">
-                        <h2>Davi</h2>
-                        <p class="curso-p">Eletromecânica</p>
-                        <p>Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
-                    </div>
-                </div>
+            <h3>Informática</h3>
+            <p>
+              Tem como objetivo desenvolver a capacidade e as habilidades do
+              estudante no que diz respeito ao desenvolvimento, ao
+              aperfeiçoamento e à correção de tecnologias. Por meio de aulas
+              práticas e teóricas, o aluno aprende a arquitetar estruturas de
+              softwares e sistemas, além de estudar as mais variadas e modernas
+              linguagens da programação, seguindo sempre as normas técnicas
+              vigentes.
+            </p>
+          </div>
+          <div class="card">
+            <div class="cursos-card-img">
+              <img
+                src="img/home-page-cursos/admin.png"
+                alt="Logo de administração"
+              />
             </div>
-
-            <div class="exalunos-link-div">
-                <a href="egressos-da-etesc.html">Ver todos os ex-alunos</a>
+            <h3>Administração</h3>
+            <p>
+              É responsável por formar profissionais responsáveis em executar as
+              atividades administrativas da organização, principalmente
+              relacionados ao processo de gestão de pessoas, marketing, vendas,
+              operação de logística e outras.
+            </p>
+          </div>
+          <div class="card">
+            <div class="cursos-card-img">
+              <img
+                src="img/home-page-cursos/quimica.png"
+                alt="Logo de química"
+              />
             </div>
-        </section>
+            <h3>Química</h3>
+            <p>
+              Tem como objetivo formar pessoas para atuar com os processos
+              químicos em indústrias, fazer a manipulação de substâncias e de
+              equipamentos e trabalhar em laboratórios — com controle de
+              qualidade, assistência técnica e outros.
+            </p>
+          </div>
+          <div class="card">
+            <div class="cursos-card-img">
+              <img
+                src="img/home-page-cursos/enfermagem.png"
+                alt="Logo de enfermagem"
+              />
+            </div>
+            <h3>Enfermagem</h3>
+            <p>
+              É uma formação de nível médio que inclui disciplinas teóricas e
+              práticas, excelente opção para quem tem interesse pela área da
+              saúde e quer entrar mais rápido no mercado de trabalho. As aulas
+              práticas são realizadas em laboratórios, onde o estudante pode
+              treinar os procedimentos que terá que executar no estágio e depois
+              de formado, com a supervisão de profissionais experientes.
+            </p>
+          </div>
+          <div class="card">
+            <div class="cursos-card-img">
+              <img
+                src="img/home-page-cursos/eletro.png"
+                alt="Logo de eletromecânica"
+              />
+            </div>
+            <h3>Eletromecânica</h3>
+            <p>
+              Integra as áreas de instrumentação e controle de processos
+              industriais com a eletrônica e mecânica industrial no setor
+              produtivo, manutenção de equipamentos e instalações
+              eletroeletrônicas industriais, observando normas técnicas e de
+              segurança.
+            </p>
+          </div>
+          <div class="card">
+            <div class="cursos-card-img">
+              <img
+                src="img/home-page-cursos/segurança.png"
+                alt="Logo de segurança de trabalho"
+              />
+            </div>
+            <h3>Segurança do Trabalho</h3>
+            <p>
+              Ensina análise de ambientes laborais, prevenção de riscos e
+              atuação em casos de perigo como incêndios, quedas, mau
+              funcionamento de equipamentos e escape de gases tóxicos, entre
+              outras situações.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="descricao-section">
-            <h2>Sobre a ETESC</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam beatae deleniti, quidem et culpa, consectetur corrupti perferendis sed consequatur voluptatibus mollitia a animi repudiandae similique suscipit eos, iusto aperiam necessitatibus.</p>
+      <section class="ex-alunos-section">
+        <h2>Alunos Promissores</h2>
 
+        <div class="exalunos-grid">
+          <div class="exalunos-card">
             <div>
-                <a href="" class="descricao-links">Como se inscrever na ETESC?</a>
-                <a href="" class="descricao-links"></a>
-                <a href="" class="descricao-links"></a>
+              <div class="img-div"></div>
             </div>
+            <div class="exalunos-descricao">
+              <h2>Davi</h2>
+              <p class="curso-p">Eletromecânica</p>
+              <p>
+                Glavi amet ritnisl libero molestie ante ut fringilla purus eros
+                quis glavrid from dolor amet iquam lorem bibendum
+              </p>
+            </div>
+          </div>
+        </div>
 
-        </section>
-        
-        
+        <div class="exalunos-link-div">
+          <a href="egressos-da-etesc.html">Ver todos os ex-alunos</a>
+        </div>
+      </section>
 
+      <section class="descricao-section">
+        <h2>Sobre a ETESC</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam beatae
+          deleniti, quidem et culpa, consectetur corrupti perferendis sed
+          consequatur voluptatibus mollitia a animi repudiandae similique
+          suscipit eos, iusto aperiam necessitatibus.
+        </p>
+
+        <div class="descricao-links">
+          <a href="#">Como se inscrever na ETESC?</a>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer-class">
-        <p>&copy;All rights reserved</p>
+    <footer class="footer">
+      <p>&copy;All rights reserved</p>
     </footer>
-
-    
-</body>
+  </body>
 </html>
