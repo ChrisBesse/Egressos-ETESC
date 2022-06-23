@@ -3,7 +3,7 @@
  =============*/
 
 :root {
-  --color-primary: #DFF9FD;
+  --color-primary: #dff9fd;
   --color-secondary: #000dfb;
   --color-secondary-opacity: #000dfb5b;
   --color-light: #fff;
@@ -11,14 +11,14 @@
   --color-dark2: #5792ff;
   --color-link: #a0dbff;
 
-/* b9e1ff */
+  /* b9e1ff */
 
   /* --body-bg-color:  */
   --card-bg: #fff;
   --header-bg: #fff;
   --header-clr: #fff;
   --color-bg-light: #a0dbff;
-  --footer-bg: rgba(0, 0, 0, .3);
+  --footer-bg: rgba(0, 0, 0, 0.3);
 
   --fw-400: 400;
   --fw-700: 700;
@@ -53,8 +53,13 @@ p {
   margin-top: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
+}
+
+abbr {
+  color: var(--color-dark2);
 }
 
 ::after,
@@ -136,19 +141,13 @@ ul, ol {
 /* ===========
  Egressos imgs
  =============*/
-.img-div {
-  max-width: 300px;
-  /* min-height: 300px; */
+.img-div img {
+  max-width: 250px;
+  height: 250px;
   aspect-ratio: 1 / 1;
-  border-radius: 36% 64% 38% 62% / 61% 48% 52% 39%;
-  background-image: url("../img/fff.png");
-  background-position: center;
+  border-radius: 50%;
 
   transition: border-radius 300ms ease;
-}
-
-.img-div:hover {
-  border-radius: 63% 37% 64% 36% / 31% 57% 43% 69%;
 }
 
 /* ===========
